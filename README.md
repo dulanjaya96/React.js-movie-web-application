@@ -1,12 +1,7 @@
-# React + Vite
+I built a movie search app using React.js and the TMDb API to let users quickly find and explore movies. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I used a debounce feature with react-use so the app waits 500ms after typing before searching, which reduces unnecessary API calls. 
 
-Currently, two official plugins are available:
+I integrated Appwrite to track trending movies. each search updates or creates a record in the database, and the top results are shown in a trending section. The app includes a loader for smooth UX, error handling for failed requests, and a clean, responsive design with Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tech Stack: React.js | TMDb API | react-use (debounce) | Appwrite | Tailwind CSS
